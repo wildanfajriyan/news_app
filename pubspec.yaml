@@ -1,6 +1,6 @@
 name: news_app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -17,3 +17,48 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Merriweather
+      fonts:
+        - asset: assets/fonts/Merriweather-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Merriweather-BlackItalic.ttf
+          weight: 900
+        - asset: assets/fonts/Merriweather-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Merriweather-BoldItalic.ttf
+          weight: 700
+        - asset: assets/fonts/Merriweather-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Merriweather-Italic.ttf
+          weight: 400
+        - asset: assets/fonts/Merriweather-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Merriweather-LightItalic.ttf
+          weight: 300
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/OpenSans-ExtraBoldItalic.ttf
+          weight: 800
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-BoldItalic.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/OpenSans-SemiBoldItalic.ttf
+          weight: 600
+        - asset: assets/fonts/OpenSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/OpenSans-MediumItalic.ttf
+          weight: 500
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-Italic.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSans-LightItalic.ttf
+          weight: 300

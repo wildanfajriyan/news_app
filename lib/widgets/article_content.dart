@@ -13,6 +13,9 @@ class ArticleContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
         padding: EdgeInsets.symmetric(horizontal: 10),
-        child: Text(news.content));
+        child: Text(
+          news.content,
+          style: Theme.of(context).textTheme.bodyLarge,
+        ));
   }
 }

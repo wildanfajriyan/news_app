@@ -13,7 +13,8 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.teal.shade700,
+        foregroundColor: Colors.white,
         actions: [
           IconButton(
               onPressed: () {},

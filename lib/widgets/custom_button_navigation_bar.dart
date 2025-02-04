@@ -7,10 +7,18 @@ class CustomButtomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(items: [
-      BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Beranda'),
+    return BottomNavigationBar(unselectedItemColor: Colors.grey, items: [
       BottomNavigationBarItem(
-        icon: Icon(Icons.account_circle_sharp),
+        icon: Icon(
+          Icons.home,
+          color: Colors.teal.shade700,
+        ),
+        label: 'Beranda',
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(
+          Icons.account_circle_sharp,
+        ),
         label: 'Akun',
       ),
     ]);

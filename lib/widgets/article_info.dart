@@ -13,21 +13,21 @@ class ArticleInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.sizeOf(context).width,
-      margin: EdgeInsets.fromLTRB(10, 10, 10, 60),
+      margin: EdgeInsets.fromLTRB(10, 10, 10, 50),
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
           border: Border(
-              bottom: BorderSide(color: Colors.grey.shade300, width: 3.0))),
+              bottom: BorderSide(color: Colors.grey.shade200, width: 2.0))),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             'Oleh ${news.author}',
-            style: TextStyle(fontSize: 12),
+            style: Theme.of(context).textTheme.labelMedium,
           ),
           Text(
             '${news.publishedDate} ${news.publishedTime} | ${news.category}',
-            style: TextStyle(fontSize: 12),
+            style: Theme.of(context).textTheme.labelMedium,
           )
         ],
       ),

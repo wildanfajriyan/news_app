@@ -23,7 +23,7 @@ class NewsImageHeader extends StatelessWidget {
                 image: DecorationImage(
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
-                        Colors.black.withAlpha(155), BlendMode.dstATop),
+                        Colors.black.withAlpha(135), BlendMode.dstATop),
                     image: NetworkImage(news.image))),
           ),
           Padding(
@@ -33,11 +33,8 @@ class NewsImageHeader extends StatelessWidget {
               children: [
                 Text(
                   news.title,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                      height: 1.3),
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      color: Colors.white, fontWeight: FontWeight.w600),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
@@ -45,8 +42,8 @@ class NewsImageHeader extends StatelessWidget {
                 ),
                 Text(
                   news.summary,
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.w500),
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      color: Colors.white, fontWeight: FontWeight.w400),
                   textAlign: TextAlign.center,
                 ),
               ],

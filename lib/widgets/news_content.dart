@@ -18,17 +18,17 @@ class NewsContent extends StatelessWidget {
         children: [
           Text(
             news.title,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
+            style: Theme.of(context)
+                .textTheme
+                .headlineMedium
+                ?.copyWith(fontWeight: FontWeight.w600),
             textAlign: TextAlign.left,
           ),
           SizedBox(height: 12),
           Text(
             news.summary,
-            style: TextStyle(fontWeight: FontWeight.w300),
-            textAlign: TextAlign.justify,
+            style: Theme.of(context).textTheme.bodyMedium,
+            textAlign: TextAlign.left,
           ),
           SizedBox(height: 12),
           NewsFooter(news: news)

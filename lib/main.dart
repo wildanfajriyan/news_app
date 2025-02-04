@@ -3,6 +3,7 @@ import 'package:news_app/model/news_data.dart';
 import 'package:news_app/screen/detail_screen.dart';
 import 'package:news_app/screen/home_screen.dart';
 import 'package:news_app/static/navigation_route.dart';
+import 'package:news_app/style/theme/news_theme.dart';
 
 void main() {
   runApp(const MainApp());
@@ -14,16 +15,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-          appBarTheme: AppBarTheme(
-            color: Colors.lightGreen,
-            elevation: 0.0,
-            titleTextStyle: TextStyle(
-                color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
-            actionsIconTheme: IconThemeData(color: Colors.white),
-          ),
-          colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.green, surface: Colors.white)),
+      theme: NewsTheme.lightTheme,
+      darkTheme: NewsTheme.darkTheme,
+      themeMode: ThemeMode.system,
       initialRoute: NavigationRoute.homeRoute.name,
       routes: {
         NavigationRoute.homeRoute.name: (context) => HomeScreen(),

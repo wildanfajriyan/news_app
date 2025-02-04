@@ -19,14 +19,17 @@ class NewsFooter extends StatelessWidget {
           children: [
             Text(
               news.publishedTime,
-              style: TextStyle(fontWeight: FontWeight.w200, fontSize: 12),
+              style: Theme.of(context).textTheme.labelMedium,
             ),
             SizedBox(
               width: 6,
             ),
             Text(
               news.category,
-              style: TextStyle(color: Colors.green.shade900, fontSize: 12),
+              style: Theme.of(context)
+                  .textTheme
+                  .labelMedium
+                  ?.copyWith(color: Colors.teal.shade700),
             )
           ],
         ),
