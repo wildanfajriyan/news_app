@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/model/news_data.dart';
+import 'package:news_app/provider/index_nav_provider.dart';
 import 'package:news_app/screen/detail_screen.dart';
 import 'package:news_app/screen/home_screen.dart';
 import 'package:news_app/static/navigation_route.dart';
 import 'package:news_app/style/theme/news_theme.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(ChangeNotifierProvider(
+      create: (context) => IndexNavProvider(), child: const MainApp()));
 }
 
 class MainApp extends StatelessWidget {
