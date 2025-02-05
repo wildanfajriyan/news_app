@@ -19,7 +19,6 @@ class HomeScreen extends StatelessWidget {
           NewsList(),
           NewsList(),
         ]),
-        bottomNavigationBar: CustomButtomNavigationBar(),
       ),
     );
   }
